@@ -32,7 +32,7 @@ function LoginPage() {
     try {
         console.log(process.env.REACT_APP_API)
       const res = await axios.post(
-        `http://localhost:8000/api/v1/login`,
+        `https://xenonstack-task1-ul2d.onrender.com/api/v1/login`,
         {email,password} 
       );
 

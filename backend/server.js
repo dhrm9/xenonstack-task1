@@ -9,7 +9,11 @@ const app = express();
 const cors = require('cors');
 
 // Use CORS to allow requests from frontend (React)
-app.use(cors());
+app.use(cors({
+    origin: "https://xenonstack-task1-one.vercel.app/",
+    methods: ["GET", "POST"],
+    credentials: true
+}));
 app.use(express.json());
 
 // API Routes

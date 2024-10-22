@@ -30,7 +30,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/getDummy/data');
+        const res = await axios.get('https://xenonstack-task1-ul2d.onrender.com/api/getDummy/data');
         setItems(res.data); // Set the fetched data to items state
       } catch (error) {
         console.error('Error fetching data:', error);

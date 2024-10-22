@@ -32,7 +32,7 @@ function SignupPage() {
         //console.log("formValues= ",formValues);
         // setData(signUpData);
         console.log(process.env.REACT_APP_API)
-        const res=await axios.post(`http://localhost:8000/api/v1/signup`,
+        const res=await axios.post(`https://xenonstack-task1-ul2d.onrender.com/api/v1/signup`,
         {name,email,password});
         console.log(res);
         if(res.data.success)
