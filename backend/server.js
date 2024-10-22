@@ -10,7 +10,7 @@ const cors = require('cors');
 
 // Use CORS to allow requests from frontend (React)
 app.use(cors({
-    origin: "https://xenonstack-task1-one.vercel.app/",
+    origin: "https://xenonstack-task1-one.vercel.app",
     methods: ["GET", "POST"],
     credentials: true
 }));
